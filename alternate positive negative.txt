@@ -1,0 +1,24 @@
+#include <iostream>
+
+using namespace std;
+
+int factorial(int n){
+    int fact=1;
+    for(int i=1; i<=n; i++){
+        fact=fact*i;
+    }
+    return fact;
+}
+
+int main()
+{
+    int n, sum=0;
+    int sign=1;
+    cin>>n;
+    for(int i=1; i<=n;i++){
+        sum= sum+ sign*factorial(i);
+        sign=sign*-1;
+    }
+    cout<<sum;
+    return 0;
+}
