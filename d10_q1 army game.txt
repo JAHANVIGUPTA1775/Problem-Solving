@@ -1,0 +1,23 @@
+int gameWithCells(int n, int m) {
+    if(n%2==0 && m%2==0){
+        return ((n/2)*(m/2));
+    }
+    else if(n%2!=0 && m%2==0){
+        return (((n/2)+1)*(m/2));
+    }
+    else if(n%2==0 && m%2!=0){
+        return (((n/2))*((m/2)+1));
+    }
+    else{
+        return (((n/2)+1)*((m/2)+1));
+    }
+    
+    
+    
+}
+/******************************/
+int gameWithCells(int n, int m) {
+    return ceil(n/2.0)*ceil(m/2.0);
+    
+    
+}
